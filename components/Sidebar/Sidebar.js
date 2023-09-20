@@ -39,7 +39,7 @@ export default function Sidebar() {
             }
           >
             {/* Collapse header */}
-            <div className="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200">
+            <div className="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-slate-200">
               <div className="flex flex-wrap">
                 <div className="w-6/12">
                   <Link href="/">Notus NextJS</Link>
@@ -61,7 +61,7 @@ export default function Sidebar() {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="border-0 px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+                  className="border-0 px-3 py-2 h-12 border border-solid  border-slate-500 placeholder-slate-300 text-slate-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
                 />
               </div>
             </form>
@@ -69,7 +69,7 @@ export default function Sidebar() {
             {/* Divider */}
             <hr className="my-4 md:min-w-full" />
             {/* Heading */}
-            <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+            <h6 className="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
               Admin Layout Pages
             </h6>
             {/* Navigation */}
@@ -95,7 +95,7 @@ export default function Sidebar() {
             {/* Divider */}
             <hr className="my-4 md:min-w-full" />
             {/* Heading */}
-            <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+            <h6 className="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
               Auth Layout Pages
             </h6>
             {/* Navigation */}
@@ -113,7 +113,7 @@ export default function Sidebar() {
             {/* Divider */}
             <hr className="my-4 md:min-w-full" />
             {/* Heading */}
-            <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+            <h6 className="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
               No Layout Pages
             </h6>
             {/* Navigation */}
@@ -131,7 +131,7 @@ export default function Sidebar() {
             {/* Divider */}
             <hr className="my-4 md:min-w-full" />
             {/* Heading */}
-            <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+            <h6 className="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
               Documentation
             </h6>
             {/* Navigation */}
@@ -140,9 +140,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/colors/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fas fa-paint-brush mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fas fa-paint-brush mr-2 text-slate-300 text-base"></i>
                   Styles
                 </a>
               </li>
@@ -151,9 +151,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fab fa-css3-alt mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fab fa-css3-alt mr-2 text-slate-300 text-base"></i>
                   CSS Components
                 </a>
               </li>
@@ -162,9 +162,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fab fa-angular mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fab fa-angular mr-2 text-slate-300 text-base"></i>
                   Angular
                 </a>
               </li>
@@ -173,9 +173,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fab fa-js-square mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fab fa-js-square mr-2 text-slate-300 text-base"></i>
                   Javascript
                 </a>
               </li>
@@ -184,9 +184,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fab fa-react mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fab fa-react mr-2 text-slate-300 text-base"></i>
                   NextJS
                 </a>
               </li>
@@ -195,9 +195,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fab fa-react mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fab fa-react mr-2 text-slate-300 text-base"></i>
                   React
                 </a>
               </li>
@@ -206,9 +206,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fas fa-link mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fas fa-link mr-2 text-slate-300 text-base"></i>
                   Svelte
                 </a>
               </li>
@@ -217,9 +217,9 @@ export default function Sidebar() {
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus"
                   target="_blank"
-                  className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
+                  className="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
                 >
-                  <i className="fab fa-vuejs mr-2 text-blueGray-300 text-base"></i>
+                  <i className="fab fa-vuejs mr-2 text-slate-300 text-base"></i>
                   VueJS
                 </a>
               </li>

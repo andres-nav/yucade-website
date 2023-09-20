@@ -6,8 +6,9 @@ import Link from "next/link";
 import Navbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
-import SectionPrices from "components/Sections/SectionPrices";
+import SectionCharacteristics from "components/Sections/SectionCharacteristics";
 import SectionInfo from "components/Sections/SectionInfo";
+import SectionPrices from "components/Sections/SectionPrices";
 import SectionContact from "components/Sections/SectionContact";
 import SectionAboutUs from "components/Sections/SectionAboutUs";
 
@@ -23,12 +24,10 @@ export default function Index() {
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
-            style={
-              {
-                // backgroundImage:
-                //   "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
-              }
-            }
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+            }}
           >
             <span
               id="blackOverlay"
@@ -39,19 +38,12 @@ export default function Index() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                    <h1 className="text-white font-semibold text-5xl">Yucade, tu canal de denuncias</h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    o eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat
-                  </p>
-
-                      <button
-                        className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                      >
-			  Demo
-                      </button>
+                  <h1 className="text-white font-semibold text-5xl">
+                    Yucade, tu canal de denuncias
+                  </h1>
+                  <button className="bg-white text-slate-800 active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 mt-24 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                    ¡Pruébalo ahora!
+                  </button>
                 </div>
               </div>
             </div>
@@ -65,12 +57,12 @@ export default function Index() {
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
               version="1.1"
-              viewBox="0 0 2560 100"
+              viewBox="0 0 2560 90"
               x="0"
               y="0"
             >
               <polygon
-                className="text-blueGray-200 fill-current"
+                className="text-slate-200 fill-current"
                 points="2560 0 2560 100 0 100"
               ></polygon>
             </svg>
@@ -80,11 +72,11 @@ export default function Index() {
         {
           // Entry page
         }
-	  <SectionInfo/>
-        
-	<SectionPrices />
-	<SectionContact />
-	<SectionAboutUs/>
+        <SectionInfo />
+        <SectionCharacteristics />
+        <SectionPrices />
+        <SectionContact />
+        <SectionAboutUs />
       </main>
       <Footer />
     </>

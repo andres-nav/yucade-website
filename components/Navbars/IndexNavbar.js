@@ -9,7 +9,7 @@ export default function Navbar(props) {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-              className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xl uppercase font-bold"
+              className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xl uppercase font-bold"
               href="/"
             >
               Yucade
@@ -35,33 +35,33 @@ export default function Navbar(props) {
               {/*
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.linkedin.com/company/yucade"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-linkedin text-lg leading-lg " />
+                  <i className="text-slate-400 fab fa-linkedin text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Linkedin</span>
                 </Link>
               </li>
 
 		    <li className="flex items-center">
 			<Link
-			    className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+			    className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
 			    href="https://twitter.com/yucadesl"
 			    target="_blank"
 			>
-			    <i className="text-blueGray-400 fab fa-twitter text-lg leading-lg " />
+			    <i className="text-slate-400 fab fa-twitter text-lg leading-lg " />
 			    <span className="lg:hidden inline-block ml-2">Twitter</span>
 			</Link>
 		    </li>
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://wa.me/+34666666666"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-whatsapp text-lg leading-lg " />
+                  <i className="text-slate-400 fab fa-whatsapp text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Whatsapp</span>
                 </Link>
               </li>
@@ -70,16 +70,25 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#section-prices"
+                  className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="#caracteristicas"
+                >
+                  Características
+                </Link>
+              </li>
+
+              <li className="flex items-center">
+                <Link
+                  className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="#precios"
                 >
                   Precios
                 </Link>
               </li>
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#section-contact"
+                  className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="#contacto"
                 >
                   Contacto
                 </Link>
@@ -87,8 +96,8 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#section-about-us"
+                  className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="#sobre-nosotros"
                 >
                   Sobre Nosotros
                 </Link>
@@ -97,7 +106,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <Link href="https://demo.andresnav.com" target="_blank">
                   <button
-                    className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                    className="bg-slate-700 text-white active:bg-slate-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                     type="button"
                   >
                     Demo

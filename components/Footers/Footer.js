@@ -13,7 +13,7 @@ export default function Footer() {
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
             version="1.1"
-            viewBox="0 0 2560 100"
+            viewBox="0 0 2560 90"
             x="0"
             y="0"
           >
@@ -27,20 +27,20 @@ export default function Footer() {
           <div className="flex flex-wrap text-center lg:text-left">
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-3xl font-semibold">
-                Lorem ipsum dolor sit amet
+                Yucade, tu canal de denuncias
               </h4>
-              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+              <h5 className="text-lg mt-0 mb-2 text-slate-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
                 <button
-                  className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-sky-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   <i className="fab fa-linkedin"></i>
                 </button>
                 <button
-                  className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white text-sky-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
                   <i className="fab fa-twitter"></i>
@@ -55,14 +55,14 @@ export default function Footer() {
             </div>
             <div className="w-full lg:w-6/12 px-4">
               <div className="flex flex-wrap items-top mb-6">
-                <div className="w-full lg:w-4/12 px-4 ml-auto">
-                  <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                <div className="w-full lg:w-6/12 px-4 ml-auto">
+                  <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">
                     Lorem ipsum
                   </span>
                   <ul className="list-unstyled">
                     <li>
                       <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/presentation?ref=nnjs-footer"
                       >
                         Lorem ipsum
@@ -70,7 +70,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
                         href="https://blog.creative-tim.com?ref=nnjs-footer"
                       >
                         Lorem ipsum
@@ -78,18 +78,18 @@ export default function Footer() {
                     </li>
                     <li>
                       <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
                         href="https://www.github.com/creativetimofficial?ref=nnjs-footer"
                       >
-                        Lorem ipsum
+                        Términos y Condiciones
                       </a>
                     </li>
                     <li>
                       <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/bootstrap-themes/free?ref=nnjs-footer"
                       >
-                        Lorem ipsum
+                        Políticas de Privacidad
                       </a>
                     </li>
                   </ul>
@@ -97,10 +97,10 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-blueGray-300" />
+          <hr className="my-6 border-slate-300" />
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-blueGray-500 font-semibold py-1">
+              <div className="text-sm text-slate-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} Yucade
               </div>
             </div>
