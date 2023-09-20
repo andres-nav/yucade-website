@@ -69,38 +69,38 @@ export default function Navbar(props) {
 		*/}
 
               <li className="flex items-center">
-                <Link
+                <a
                   className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="#caracteristicas"
                 >
                   Características
-                </Link>
+                </a>
               </li>
 
               <li className="flex items-center">
-                <Link
+                <a
                   className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="#precios"
                 >
                   Precios
-                </Link>
+                </a>
               </li>
               <li className="flex items-center">
-                <Link
+                <a
                   className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="#contacto"
                 >
                   Contacto
-                </Link>
+                </a>
               </li>
 
               <li className="flex items-center">
-                <Link
+                <a
                   className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="#sobre-nosotros"
                 >
                   Sobre Nosotros
-                </Link>
+                </a>
               </li>
 
               <li className="flex items-center">

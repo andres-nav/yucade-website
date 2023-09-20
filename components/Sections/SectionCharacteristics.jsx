@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Link from "next/link";
 
 export default function SectionCharacteristics() {
   const [openTab, setOpenTab] = useState(1);
@@ -25,7 +24,7 @@ export default function SectionCharacteristics() {
                 role="tablist"
               >
                 <li className="-mb-px mr-2 last:mr-0 flex-1 text-center">
-                  <Link
+                  <a
                     className={
                       "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                       (openTab === 1
@@ -41,10 +40,10 @@ export default function SectionCharacteristics() {
                     role="tablist"
                   >
                     Plataforma y Seguridad
-                  </Link>
+                  </a>
                 </li>
                 <li className="-mb-px mr-2 last:mr-0 flex-1 text-center">
-                  <Link
+                  <a
                     className={
                       "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                       (openTab === 2
@@ -60,10 +59,10 @@ export default function SectionCharacteristics() {
                     role="tablist"
                   >
                     Legal
-                  </Link>
+                  </a>
                 </li>
                 <li className="-mb-px mr-2 last:mr-0 flex-1 text-center">
-                  <Link
+                  <a
                     className={
                       "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                       (openTab === 3
@@ -79,7 +78,7 @@ export default function SectionCharacteristics() {
                     role="tablist"
                   >
                     Servicios
-                  </Link>
+                  </a>
                 </li>
               </ul>
 
@@ -97,7 +96,7 @@ export default function SectionCharacteristics() {
                               Argon Design System
                             </th>
                             <td className="px-6">
-                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check"/>
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
                             </td>
                           </tr>
                           <tr className="bg-blueGray-100">
@@ -130,7 +129,7 @@ export default function SectionCharacteristics() {
                               Argon Design System
                             </th>
                             <td className="px-6">
-                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check"/>
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
                             </td>
                           </tr>
                           <tr className="bg-blueGray-100">
@@ -163,7 +162,7 @@ export default function SectionCharacteristics() {
                               Argon Design System
                             </th>
                             <td className="px-6">
-                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check"/>
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
                             </td>
                           </tr>
                           <tr className="bg-blueGray-100">

@@ -1,6 +1,38 @@
 import Link from "next/link";
 
 export default function SectionContact() {
+  const sendContactInfo = async (e) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+
+    const name = form.name.value;
+    const business = form.business.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const message = form.message.value;
+    // if (name === "" || business === "" || email === "" || phone === "") return;
+
+    const subject = `Nuevo contacto: ${name} - ${business}`;
+    const messageToSend = `
+      Nombre: ${name}
+      Empresa: ${business}
+      Email: ${email}
+      Teléfono: ${phone}
+      Mensaje: ${message}
+    `;
+
+    await fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify({
+        message: messageToSend,
+        subject: subject,
+      }),
+    }).catch((error) => {
+      console.error("Error sending email", error);
+    });
+  };
+
   return (
     <>
       <section className="pb-20 relative block bg-slate-800" id="contacto">
@@ -31,13 +63,14 @@ export default function SectionContact() {
                 para reducir los comportamientos inadecuados
               </h4>
               <p className="leading-relaxed mt-1 mb-4 text-slate-200">
-                Deja tu información a continuació o envia un correo electrónico
-                a contacto@yucade.com y nos pondremos en contacto con Ud.
+                Deja tu información a continuación o envia un correo electrónico
+                a <span className="font-semibold">contacto@yucade.com</span> y
+                nos pondremos en contacto con Ud.
               </p>
 
               <div className="relative flex flex-col min-w-0 break-words w-full mt-6 mb-6 shadow-lg rounded-lg bg-slate-200">
                 <div className="flex-auto p-5 lg:p-10 text-left">
-                  <form>
+                  <form onSubmit={sendContactInfo}>
                     <div className="relative w-full mb-3 ">
                       <label
                         className="block uppercase text-slate-600 text-xs font-bold mb-2"
@@ -46,6 +79,7 @@ export default function SectionContact() {
                         Nombre Completo *
                       </label>
                       <input
+                        name="name"
                         type="text"
                         required
                         className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
@@ -61,6 +95,7 @@ export default function SectionContact() {
                         Empresa / organización
                       </label>
                       <input
+                        name="business"
                         type="text"
                         className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         placeholder="Nombre de la empresa"
@@ -75,6 +110,7 @@ export default function SectionContact() {
                         Email *
                       </label>
                       <input
+                        name="email"
                         type="email"
                         required
                         className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
@@ -90,7 +126,8 @@ export default function SectionContact() {
                         Phone *
                       </label>
                       <input
-                        type="phone"
+                        name="phone"
+                        type="tel"
                         required
                         className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         placeholder="Phone"
@@ -105,6 +142,7 @@ export default function SectionContact() {
                         Mensaje
                       </label>
                       <textarea
+                        name="message"
                         rows="4"
                         cols="80"
                         className="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
@@ -115,7 +153,6 @@ export default function SectionContact() {
                     <div>
                       <label className="inline-flex items-center cursor-pointer">
                         <input
-                          id="customCheckLogin"
                           type="checkbox"
                           required
                           className="form-checkbox border-0 rounded text-slate-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
