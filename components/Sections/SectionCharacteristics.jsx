@@ -5,7 +5,10 @@ export default function SectionCharacteristics() {
 
   return (
     <>
-      <section className="pt-20 pb-32 bg-blueGray-200" id="caracteristicas">
+      <section
+        className="lg:pt-20 pb-6 lg:pb-32 bg-blueGray-200"
+        id="caracteristicas"
+      >
         <div className="container mx-auto px-4  ">
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">

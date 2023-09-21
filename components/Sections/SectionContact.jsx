@@ -11,11 +11,10 @@ export default function SectionContact() {
     const email = form.email.value;
     const phone = form.phone.value;
     const message = form.message.value;
-    // if (name === "" || business === "" || email === "" || phone === "") return;
+    if (name === "" || business === "" || email === "" || phone === "") return;
 
     const subject = `Nuevo contacto: ${name} - ${business}`;
-    const messageToSend = `
-      Nombre: ${name}
+    const messageToSend = `Nombre: ${name}
       Empresa: ${business}
       Email: ${email}
       Teléfono: ${phone}
@@ -28,9 +27,13 @@ export default function SectionContact() {
         message: messageToSend,
         subject: subject,
       }),
-    }).catch((error) => {
-      console.error("Error sending email", error);
-    });
+    })
+      .then((res) => {
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("Error sending email", error);
+      });
   };
 
   return (
@@ -55,7 +58,7 @@ export default function SectionContact() {
             ></polygon>
           </svg>
         </div>
-        <div className="container mx-auto px-4 lg:pt-12 lg:pb-64">
+        <div className="container mx-auto px-4 pt-8 lg:pt-12 ">
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-2xl font-semibold text-white">
@@ -64,11 +67,16 @@ export default function SectionContact() {
               </h4>
               <p className="leading-relaxed mt-1 mb-4 text-slate-200">
                 Deja tu información a continuación o envia un correo electrónico
-                a <span className="font-semibold">contacto@yucade.com</span> y
-                nos pondremos en contacto con Ud.
+                a{" "}
+                <span className="font-semibold">
+                  <Link href="mailto:contacto@yucade.com">
+                    contacto@yucade.com
+                  </Link>
+                </span>{" "}
+                y nos pondremos en contacto con Ud.
               </p>
 
-              <div className="relative flex flex-col min-w-0 break-words w-full mt-6 mb-6 shadow-lg rounded-lg bg-slate-200">
+              <div className="relative flex flex-col min-w-0 break-words w-full mt-6 shadow-lg rounded-lg bg-slate-200">
                 <div className="flex-auto p-5 lg:p-10 text-left">
                   <form onSubmit={sendContactInfo}>
                     <div className="relative w-full mb-3 ">

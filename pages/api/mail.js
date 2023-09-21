@@ -15,13 +15,14 @@ export default async function handler(req, res) {
     client.sendAsync(
       {
         from: process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
-        to: "andres.navarro@yucade.com",
+        to: process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
         subject: data.subject,
         text: data.message,
         html: `<p>${data.message}</p>`,
       },
       (err, message) => {
         console.log(err || message);
+        return res.status(400).json({ message: message });
       },
     );
 

@@ -25,8 +25,7 @@ export default function Index() {
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+              backgroundImage: "url('/img/front.jpg')",
             }}
           >
             <span
@@ -41,9 +40,12 @@ export default function Index() {
                   <h1 className="text-white font-semibold text-5xl">
                     Yucade, tu canal de denuncias
                   </h1>
-                  <button className="bg-white text-slate-800 active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 mt-24 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
-                    ¡Pruébalo ahora!
-                  </button>
+
+                  <Link href="https://demo.andresnav.com" target="_blank">
+                    <button className="bg-white text-slate-800 active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 mt-24 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      ¡Pruébalo ahora!
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

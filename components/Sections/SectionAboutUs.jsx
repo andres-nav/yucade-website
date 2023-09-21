@@ -2,7 +2,7 @@ export default function SectionAboutUs() {
   return (
     <>
       <section
-        className="relative block py-24 lg:pt-0 bg-slate-200"
+        className="relative block py-12 lg:pt-0 bg-slate-200"
         id="sobre-nosotros"
       >
         <div
@@ -24,12 +24,12 @@ export default function SectionAboutUs() {
             ></polygon>
           </svg>
         </div>
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div className="container mx-auto px-40 lg:pb-20">
+          <div className="flex flex-wrap justify-center ">
+            <div className="container mx-auto px-4 lg:pt-12 lg:pb-18">
               <div className="flex flex-wrap text-center justify-center">
                 <div className="w-full lg:w-6/12 px-4">
-                  <h2 className="text-4xl font-semibold">Cononcenos</h2>
+                  <h2 className="text-4xl font-semibold">Conócenos</h2>
                   <p className="text-lg leading-relaxed mt-4 mb-4 text-slate-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     o eiusmod tempor incididunt ut labore et dolore magna

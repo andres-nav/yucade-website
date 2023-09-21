@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "styles/tailwind.css";
+import "styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
