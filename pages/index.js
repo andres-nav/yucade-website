@@ -30,20 +30,24 @@ export default function Index() {
           >
             <span
               id="blackOverlay"
-              className="w-full h-full absolute opacity-75 bg-black"
+              className="w-full h-full absolute opacity-50 bg-black"
             ></span>
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
+                <div className="mt-10">
                   <h1 className="text-white font-semibold text-5xl">
                     Yucade, tu canal de denuncias
                   </h1>
-
-                  <Link href="https://demo.andresnav.com" target="_blank">
+                  <a href="/#contacto">
                     <button className="bg-white text-slate-800 active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 mt-24 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
-                      ¡Pruébalo ahora!
+                      ¡Pidelo ya!
+                    </button>
+                  </a>
+                  <Link href="https://demo.yucade.com" target="_blank">
+                    <button className="bg-gray-800 text-slate-200 active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 mt-24 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                      Pruébalo ahora
                     </button>
                   </Link>
                 </div>

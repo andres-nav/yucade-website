@@ -5,17 +5,12 @@ export default function SectionCharacteristics() {
 
   return (
     <>
-      <section
-        className="lg:pt-20 pb-6 lg:pb-32 bg-blueGray-200"
-        id="caracteristicas"
-      >
+      <section className="pb-6 lg:pb-32 bg-blueGray-200" id="caracteristicas">
         <div className="container mx-auto px-4  ">
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">
               <h2 className="text-4xl font-semibold">Características</h2>
-              <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
-                mira las mejores características
-              </p>
+              <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500"></p>
             </div>
           </div>
         </div>
@@ -64,27 +59,9 @@ export default function SectionCharacteristics() {
                     Legal
                   </a>
                 </li>
-                <li className="-mb-px mr-2 last:mr-0 flex-1 text-center">
-                  <a
-                    className={
-                      "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                      (openTab === 3
-                        ? "text-white bg-blueGray-600"
-                        : "text-blueGray-600 bg-white")
-                    }
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setOpenTab(3);
-                    }}
-                    data-toggle="tab"
-                    href="#link3"
-                    role="tablist"
-                  >
-                    Servicios
-                  </a>
-                </li>
               </ul>
 
+		{/* Do it in two columns*/}
               <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded">
                 <div className="flex-auto">
                   <div className="tab-content tab-space">
@@ -96,7 +73,7 @@ export default function SectionCharacteristics() {
                         <tbody>
                           <tr className="bg-white">
                             <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
-                              Argon Design System
+                              Privacidad y seguridad de datos.
                             </th>
                             <td className="px-6">
                               <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
@@ -104,7 +81,7 @@ export default function SectionCharacteristics() {
                           </tr>
                           <tr className="bg-blueGray-100">
                             <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
-                              Argon Design System
+                              Mantenimiento 24 h.
                             </th>
                             <td className="px-6">
                               <i className="text-blueGray-800 pr-6 fa  text-xl fa-check" />
@@ -112,7 +89,23 @@ export default function SectionCharacteristics() {
                           </tr>
                           <tr className="bg-white">
                             <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
-                              Argon Design System
+                              Servicio web personalizado para su empresa.
+                            </th>
+                            <td className="px-6">
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
+                            </td>
+                          </tr>
+                          <tr className="bg-blueGray-100">
+                            <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
+                              Aplicación de uso intuitivo y fácil.
+                            </th>
+                            <td className="px-6">
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
+                            </td>
+                          </tr>
+                          <tr className="bg-white">
+                            <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
+                              Actualizaciones y desarrollo incluido.
                             </th>
                             <td className="px-6">
                               <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
@@ -129,7 +122,7 @@ export default function SectionCharacteristics() {
                         <tbody>
                           <tr className="bg-white">
                             <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
-                              Argon Design System
+                              Garantía y seguridad jurídica.
                             </th>
                             <td className="px-6">
                               <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
@@ -137,7 +130,7 @@ export default function SectionCharacteristics() {
                           </tr>
                           <tr className="bg-blueGray-100">
                             <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
-                              Argon Design System
+                              Asesoría personalizada, 24 h contigo.
                             </th>
                             <td className="px-6">
                               <i className="text-blueGray-800 pr-6 fa  text-xl fa-check" />
@@ -145,7 +138,33 @@ export default function SectionCharacteristics() {
                           </tr>
                           <tr className="bg-white">
                             <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
-                              Argon Design System
+                              Gestión tramitación y archivo de denuncias.
+                            </th>
+                            <td className="px-6">
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
+                            </td>
+                          </tr>
+                          <tr className="bg-blueGray-100">
+                            <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
+                              Resolucion de conflictivos de todo tipo de
+                              materias.
+                            </th>
+                            <td className="px-6">
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
+                            </td>
+                          </tr>
+                          <tr className="bg-white">
+                            <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
+                              Equipo de abogados por toda España.
+                            </th>
+                            <td className="px-6">
+                              <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />
+                            </td>
+                          </tr>
+
+                          <tr className="bg-blueGray-100">
+                            <th className="px-6 align-middle text-sm whitespace-nowrap p-4 text-left flex items-center">
+                              Máxima garantía gracias nuestros expertos.
                             </th>
                             <td className="px-6">
                               <i className="text-blueGray-800 pr-6 text-xl fa fa-check" />

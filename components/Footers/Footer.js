@@ -29,10 +29,8 @@ export default function Footer() {
               <h4 className="text-3xl font-semibold">
                 Yucade, tu canal de denuncias
               </h4>
-              <h5 className="text-lg mt-0 mb-2 text-slate-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </h5>
               <div className="mt-6 lg:mb-0 mb-6">
+                {/*
                 <button
                   className="bg-white text-sky-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
@@ -51,15 +49,14 @@ export default function Footer() {
                 >
                   <i className="fab fa-whatsapp"></i>
                 </button>
+  */}
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
               <div className="flex flex-wrap items-top mb-6">
                 <div className="w-full lg:w-6/12 px-4 ml-auto">
-                  <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">
-                    Lorem ipsum
-                  </span>
                   <ul className="list-unstyled">
+                    {/*
                     <li>
                       <a
                         className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
@@ -84,10 +81,11 @@ export default function Footer() {
                         Términos y Condiciones
                       </a>
                     </li>
+*/}
                     <li>
                       <a
                         className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=nnjs-footer"
+                        href=""
                       >
                         Políticas de Privacidad
                       </a>

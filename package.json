@@ -14,9 +14,7 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "next dev",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn install && yarn run build:tailwind && yarn run dev",
-    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
+    "dev": "next dev"
   },
   "browserslist": {
     "production": [

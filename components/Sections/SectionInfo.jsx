@@ -10,13 +10,12 @@ export default function SectionInfo() {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                     <i className="fas fa-award"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">
+                  <h6 className="text-xl font-semibold uppercase">
                     Personalización y autonomía
                   </h6>
-                  <p className="mt-2 mb-4 text-slate-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    o eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  <p className="my-4 text-slate-500 text-justify px-4">
+                    Servicios únicos, adaptado para sus necesidades. Desde temas
+                    jurídicos a técnicos, somos marca propia.
                   </p>
                 </div>
               </div>
@@ -28,11 +27,13 @@ export default function SectionInfo() {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-sky-400">
                     <i className="fas fa-retweet"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Sin preocupaciones</h6>
-                  <p className="mt-2 mb-4 text-slate-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    o eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  <h6 className="text-xl font-semibold uppercase">
+                    Desentiéndase
+                  </h6>
+                  <p className="my-4 text-slate-500 text-justify px-4">
+                    Administramos tanto la plataforma como los conflictos que se
+                    produzcan. Con Yucade, centrase en lo que realmente importa,
+                    su empresa. aliqua.
                   </p>
                 </div>
               </div>
@@ -44,10 +45,13 @@ export default function SectionInfo() {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                     <i className="fas fa-fingerprint"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Acorde con la Ley</h6>
-                  <p className="mt-2 mb-4 text-slate-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    o eiusmod tempor incididunt ut labore et dolore magna
+                  <h6 className="text-xl font-semibold uppercase">
+                    Acorde con la Ley
+                  </h6>
+                  <p className="my-4 text-slate-500 text-justify px-4">
+                    Ofrecemos un equipo multidisciplinar especialista en todo
+                    tipo de materias con la capacidad de resolver tanto temas
+                    judiciales y extrajudiciales
                   </p>
                 </div>
               </div>
@@ -60,15 +64,19 @@ export default function SectionInfo() {
                 <i className="fas fa-user-friends text-xl"></i>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                Lorem ipsum dolor sit ame
+                Nuestra misión contigo
               </h3>
-              <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed o
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              <p className="text-lg font-normal leading-relaxed mt-4 mb-4 text-slate-600">
+                Queremos que la implantación de la nueva ley no le afecte en su
+                día a día.
               </p>
-              <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-slate-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed o
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              <p className="text-lg font-normal leading-relaxed mt-0 mb-4 text-slate-600">
+                Nuestros objetivo es ser el estarndar español de la gestión de
+                denuncias, desde la entrada, hasta la resolución de las mismas.
+              </p>
+              <p className="text-lg font-normal leading-relaxed mt-0 mb-4 text-slate-600">
+                Tenga la tranquilidad y seguridad de dejar en nuestras manos la
+                labor de gestionar las posibles contingencias que puedan surgir.
               </p>
             </div>
 
@@ -91,13 +99,17 @@ export default function SectionInfo() {
                       className="text-slate-700 fill-current"
                     ></polygon>
                   </svg>
-                  <h4 className="text-xl font-bold text-gray-900">Ley nueva</h4>
+                  <h4 className="text-xl font-bold text-gray-900">
+                    ¡Nueva Ley!
+                  </h4>
                   <p className="text-md mt-2 text-gray-500 text-justify">
-                    Lorem ipsum dolor sit amet, ask3k consectetur adipiscing
-                    elit, sed o eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat
+                    La Ley 2/2023, de 20 de febrero, obliga tanto todas a
+                    empresas con más de 50 trabajadores como a entidades que
+                    reciban fondos públicos a tener un dispositivo de
+                    comunicación integrado con el fin de posibilitar,
+                    protegiendo a los informantes , de infracciones y
+                    situaciones de disconformidad que vayan en contra de la
+                    legislación establecida
                   </p>
                 </blockquote>
               </div>
