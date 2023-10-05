@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function SectionContact() {
-  const sendContactInfo = async (e) => {
+  const sendContactInfo = (e) => {
     e.preventDefault();
 
     const form = e.currentTarget;
@@ -21,7 +21,7 @@ export default function SectionContact() {
       Mensaje: ${message}
     `;
 
-    await fetch("/api/mail", {
+    fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify({
         message: messageToSend,
@@ -62,8 +62,8 @@ export default function SectionContact() {
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-2xl font-semibold text-white">
-                Haga como miles de empresas que utilizan un canal de denucias
-                para reducir los comportamientos inadecuados
+                Haga como miles de empresas que utilizan nuestro canal de
+                denucias y no se preocupe más.
               </h4>
               <p className="leading-relaxed mt-1 mb-4 text-slate-200">
                 Deja tu información a continuación o envia un correo electrónico
@@ -168,11 +168,7 @@ export default function SectionContact() {
                         <span className="ml-3 text-sm font-semibold text-slate-600">
                           * Al rellenar el formulario, acepto recibir
                           comunicaciones y las{" "}
-                          <Link
-                            href=""
-                            className="text-sky-500"
-                            onClick={(e) => e.preventDefault()}
-                          >
+                          <Link href="" className="text-sky-500">
                             Políticas de Privacidad
                           </Link>
                           .
