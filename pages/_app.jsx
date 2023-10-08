@@ -1,10 +1,10 @@
-import App from 'next/app';
+import App from "next/app";
 import Head from "next/head";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "styles/globals.css";
 
-export default function MyApp({ Component, pageProps }) extends App {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -14,7 +14,9 @@ export default function MyApp({ Component, pageProps }) extends App {
         />
         <title>Yucade</title>
       </Head>
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }

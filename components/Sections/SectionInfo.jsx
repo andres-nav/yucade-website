@@ -32,7 +32,7 @@ export default function SectionInfo() {
                   </h6>
                   <p className="my-4 text-slate-500 text-justify px-4">
                     Administramos tanto la plataforma como los conflictos que se
-                    produzcan. Con Yucade, centrase en lo que realmente importa,
+                    produzcan. Con Yucade, céntrese en lo que realmente importa,
                     su empresa. aliqua.
                   </p>
                 </div>
@@ -103,13 +103,13 @@ export default function SectionInfo() {
                     ¡Nueva Ley!
                   </h4>
                   <p className="text-md mt-2 text-gray-500 text-justify">
-                    La Ley 2/2023, de 20 de febrero, obliga tanto todas a
-                    empresas con más de 50 trabajadores como a entidades que
-                    reciban fondos públicos a tener un dispositivo de
-                    comunicación integrado con el fin de posibilitar,
-                    protegiendo a los informantes , de infracciones y
-                    situaciones de disconformidad que vayan en contra de la
-                    legislación establecida
+                    La Ley 2/2023, de 20 de febrero, obliga tanto a las empresas
+                    con más de 50 trabajadores como a entidades que reciban
+                    fondos públicos a tener un dispositivo de comunicación
+                    integrado con el fin de posibilitar, protegiendo a los
+                    informantes , de infracciones y situaciones de
+                    disconformidad que vayan en contra de la legislación
+                    establecida
                   </p>
                 </blockquote>
               </div>
